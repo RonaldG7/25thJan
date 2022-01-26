@@ -16,7 +16,7 @@ const FbCreatePostComponent = () => {
             title: titleRef.current.value,
             article: articleRef.current.value,
             username: getUser,
-            hidden : false
+            likes: []
         }
         setPosts([...getPosts, post])
         submit("/profile")
