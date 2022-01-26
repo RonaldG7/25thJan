@@ -1,7 +1,7 @@
 import React, {useContext, useEffect} from 'react';
 import fbContext from "../context/KindOfFBContext";
 
-const FbFirstPage = () => {
+const FbHomePage = () => {
 
     const {setPage} = useContext(fbContext)
 
@@ -16,4 +16,4 @@ const FbFirstPage = () => {
     );
 };
 
-export default FbFirstPage;
+export default FbHomePage;

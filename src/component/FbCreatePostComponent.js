@@ -15,10 +15,11 @@ const FbCreatePostComponent = () => {
         const post = {
             title: titleRef.current.value,
             article: articleRef.current.value,
-            userName: getUser
+            username: getUser,
+            hidden : false
         }
         setPosts([...getPosts, post])
-        submit("/main")
+        submit("/profile")
     }
 
     return (

@@ -1,20 +1,20 @@
 import React, {useContext, useEffect} from 'react';
 import fbContext from "../context/KindOfFBContext";
-import FbMainPagePosts from "../component/FbMainPagePosts";
+import FbProfilePagePosts from "../component/FbProfilePagePosts";
 
-const FbMainPage = () => {
+const FbProfilePage = () => {
 
     const {setPage} = useContext(fbContext)
 
     useEffect(() => {
-        setPage("/main")
+        setPage("/profile")
     })
 
     return (
         <div>
-            <FbMainPagePosts/>
+            <FbProfilePagePosts/>
         </div>
     );
 };
 
-export default FbMainPage;
+export default FbProfilePage;

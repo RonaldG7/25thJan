@@ -12,9 +12,9 @@ const FbLogInForm = () => {
 
     function loginUser () {
         getUsers.map(x => {
-            if (x.userName === userNameRef.current.value && x.password === passwordRef.current.value) {
-                setUser(x.userName)
-                submit("/main")
+            if (x.username === userNameRef.current.value && x.password === passwordRef.current.value) {
+                setUser(x.username)
+                submit("/profile")
             }
         })
     }
