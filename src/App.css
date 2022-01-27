@@ -26,6 +26,18 @@
     position: relative;
 }
 
+.m5 {
+    margin: 5px;
+}
+
+.navBar {
+    background-color: #f3f3f3;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+}
+
 .card {
     background-color: #f3f3f3;
     border: 2px solid;

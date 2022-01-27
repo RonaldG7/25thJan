@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 
 const FbRegistrationForm = () => {
 
-    const {setPage, getUsers, setUsers} = useContext(fbContext)
+    const {getUsers, setUsers} = useContext(fbContext)
     const usernameRef = useRef()
     const passwordRef = useRef()
     const passwordTwoRef = useRef()

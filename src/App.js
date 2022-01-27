@@ -12,9 +12,71 @@ import FbCreatePostPage from "./pages/FbCreatePostPage";
 const App = () => {
 
   const [getPage, setPage] = useState("")
-  const [getUsers, setUsers] = useState([])
+  const [getUsers, setUsers] = useState([
+    {
+      username: "Tomas",
+      password: "asd"
+    },
+    {
+      username: "Paulius",
+      password: "asd"
+    },
+    {
+      username: "Linas",
+      password: "asd"
+    }
+  ])
   const [getUser, setUser] = useState("")
-  const [getPosts, setPosts] = useState([])
+  const [getPosts, setPosts] = useState([
+    {
+      "id": "97768a81-415c-4bc3-acef-f2e47c19de41",
+      "title": "Ketvirtadienis",
+      "article": "Pagaliau",
+      "username": "Tomas",
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "6d346dfb-b1b7-461c-98a9-c7af0aaff934",
+      "title": "Penktadienis",
+      "article": "Jau rytoj",
+      "username": "Tomas",
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "f5fb96f7-5346-4e34-ae86-69524360d0a3",
+      "title": "Sestadienis",
+      "article": "Savaitgalis",
+      "username": "Paulius",
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "da078871-1213-48be-a269-0d44310ed748",
+      "title": "Sekmadienis",
+      "article": "Savaitgalis",
+      "username": "Paulius",
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "b59feebc-60a3-43da-a536-f64826618ef7",
+      "title": "Pirmadienis",
+      "article": "Darbo diena",
+      "username": "Linas",
+      "likes": [],
+      "comments": []
+    },
+    {
+      "id": "2c3444cf-2f0e-4046-a2cd-bfef4ad85943",
+      "title": "Antradienis",
+      "article": "Dar viena darbo diena",
+      "username": "Linas",
+      "likes": [],
+      "comments": []
+    }
+  ])
 
   return (
       <fbContext.Provider value={{getPage, setPage, getUsers, setUsers, getUser, setUser, getPosts, setPosts}}>
