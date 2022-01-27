@@ -22,14 +22,23 @@
     flex-wrap: wrap;
 }
 
+.relative {
+    position: relative;
+}
+
 .card {
-    width: 200px;
-    height: 400px;
-    margin: 20px;
+    background-color: #f3f3f3;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 70%;
+    height: 100%;
+    margin: 5px;
+    padding: 10px;
 }
 
 .border {
     border: 2px solid;
+    border-radius: 10px;
 }
 
 .navButton {
@@ -50,4 +59,28 @@
     width: 300px;
     height: 30px;
     margin: 10px;
+}
+
+.deleteBtn {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-left: 5px;
 }
