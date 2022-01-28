@@ -18,7 +18,7 @@ const FbToolbar = () => {
                 {getPage === "/profile" && <Link to={"/createPost"} className="navButton">Create Post</Link>}
                 {getPage === "/createPost" && <Link to={"/profile"} className="navButton">Profile Page</Link>}
             </div>
-            <FbStatistics />
+            {(getPage === "/profile" || getPage === "/createPost") && <FbStatistics/>}
             {(getPage === "/profile" || getPage === "/createPost") && <Link to={"/"} className="navButton">Log Off</Link>}
         </div>
         </div>

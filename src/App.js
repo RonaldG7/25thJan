@@ -26,6 +26,7 @@ const App = () => {
       password: "asd"
     }
   ])
+  const [getWrongLogin, setWrongLogin] = useState(false)
   const [getUser, setUser] = useState("")
   const [getPosts, setPosts] = useState([
     {
@@ -77,9 +78,11 @@ const App = () => {
       "comments": []
     }
   ])
+  const [getIndex, setIndex] = useState(0)
 
   return (
-      <fbContext.Provider value={{getPage, setPage, getUsers, setUsers, getUser, setUser, getPosts, setPosts}}>
+      <fbContext.Provider value={{getPage, setPage, getUsers, setUsers, getWrongLogin, setWrongLogin,
+        getUser, setUser, getPosts, setPosts, getIndex, setIndex}}>
         <Router>
           <nav>
             <FbToolbar/>

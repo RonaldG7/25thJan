@@ -3,10 +3,14 @@ import fbContext from "../context/KindOfFBContext";
 
 const FbHomePage = () => {
 
-    const {setPage} = useContext(fbContext)
+    const {setPage, setUser} = useContext(fbContext)
 
     useEffect(() => {
         setPage("/")
+    })
+
+    useEffect(() => {
+        setUser("")
     })
 
     return (

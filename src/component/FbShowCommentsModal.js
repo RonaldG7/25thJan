@@ -2,9 +2,9 @@ import {useContext} from 'react';
 import "./Modal.css"
 import fbContext from "../context/KindOfFBContext";
 
-const FbAddCommentModal = ({closeModal, index}) => {
+const FbAddCommentModal = ({closeModal}) => {
 
-    const {getPosts} = useContext(fbContext)
+    const {getPosts, getIndex} = useContext(fbContext)
 
     return (
         <div className="modalBackground">
@@ -16,8 +16,8 @@ const FbAddCommentModal = ({closeModal, index}) => {
                     <h1>Comments</h1>
                 </div>
                 <div className="comments">
-                    {getPosts[index].comments && getPosts[index].comments.map((x,i) => <div className="comment" key={i}>
-                        <h4>{x.username}</h4>
+                    {getPosts[getIndex].comments && getPosts[getIndex].comments.map((x,i) => <div className="comment" key={i}>
+                        <h4>Commented by: {x.username}</h4>
                         <p>{x.comment}</p>
                     </div>)}
                 </div>

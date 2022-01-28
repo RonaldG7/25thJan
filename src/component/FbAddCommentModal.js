@@ -2,19 +2,19 @@ import {useContext, useRef} from 'react';
 import "./Modal.css"
 import fbContext from "../context/KindOfFBContext";
 
-const FbAddCommentModal = ({closeModal, index}) => {
+const FbAddCommentModal = ({closeModal}) => {
 
-    const {getPosts, setPosts, getUser} = useContext(fbContext)
+    const {getPosts, setPosts, getUser, getIndex} = useContext(fbContext)
     const commentRef = useRef()
 
-    function addComment(index) {
+    function addComment() {
         const allPosts = getPosts
         if (commentRef.current.value.length > 0) {
             const comment = {
                 username: getUser,
                 comment: commentRef.current.value
             }
-            allPosts[index].comments.push(comment)
+            allPosts[getIndex].comments.push(comment)
             setPosts([...allPosts])
             closeModal(false)
         }
@@ -34,7 +34,7 @@ const FbAddCommentModal = ({closeModal, index}) => {
                     </textarea>
                 </div>
                 <div className="footer">
-                    <button onClick={() => addComment(index)}>Add Comment</button>
+                    <button onClick={addComment}>Add Comment</button>
                 </div>
             </div>
         </div>

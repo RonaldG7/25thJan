@@ -27,7 +27,7 @@ const FbRegistrationForm = () => {
             <input ref={usernameRef} className="input" type="text" placeholder="Name..."/>
             <input ref={passwordRef} className="input" type="text" placeholder="Password..."/>
             <input ref={passwordTwoRef} className="input" type="text" placeholder="Repeat password..."/>
-            <button onClick={createUser}>Submit</button>
+            <button className="btn" onClick={createUser}>Submit</button>
         </div>
     );
 };
